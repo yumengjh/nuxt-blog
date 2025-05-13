@@ -3,13 +3,13 @@
 NUXT_IMAGE_PROVIDER = "ipx"
 # FIXME: https://answers.netlify.com/t/corepack-and-pnpm-10-2-0-failing-on-build/138964
 COREPACK_INTEGRITY_KEYS = "0"
+NODE_VERSION = "20"
 
 [build]
-  command = "pnpm install && pnpm run generate"
-  publish = ".output/public"
+  command = "pnpm install && pnpm generate"
+  publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "20"
   PNPM_FLAGS = "--shamefully-hoist"
   NPM_FLAGS = "--version"
 
