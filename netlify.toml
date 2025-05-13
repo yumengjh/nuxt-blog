@@ -5,7 +5,7 @@ NUXT_IMAGE_PROVIDER = "ipx"
 COREPACK_INTEGRITY_KEYS = "0"
 
 [build]
-  command = "pnpm install && pnpm run build"
+  command = "pnpm install && pnpm run generate"
   publish = ".output/public"
 
 [build.environment]
